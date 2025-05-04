@@ -63,22 +63,22 @@ export const galleryData = [
   },
   {
     title: brandName,
-    image: require("./../Images/Hair-Makeover.webp"),
+    image: require("./../Assets/Hair-Makeover.webp"),
   },
   {
     title: brandName,
-    image: require("./../Images/Tattoo-Artist-at-Work.webp"),
+    image: require("./../Assets/Tattoo-Artist-at-Work.webp"),
   },
   {
     title: brandName,
-    image: require("./../Images/Tattoo-Needle-Detailing.webp"),
+    image: require("./../Assets/Tattoo-Needle-Detailing.webp"),
   },
   {
     title: brandName,
-    image: require("./../Images/Master-Tattoo-Studio.webp"),
+    image: require("./../Assets/Master-Tattoo-Studio.webp"),
   },
   {
     title: brandName,
-    image: require("./../Images/Tattoo-Session-in-Progress.webp"),
+    image: require("./../Assets/Tattoo-Session-in-Progress.webp"),
   },
 ];

@@ -22,7 +22,7 @@ const pricesData = [
     discount: "15% OFF",
     description:
       "Complete your grooming routine with this relaxing, skin-refreshing, and stylish hair makeover combo.",
-    image: require("./../Images/Advance Haircut + Head Massage + Hair Wash + De-Tan.webp"),
+    image: require("./../Assets/Advance Haircut + Head Massage + Hair Wash + De-Tan.webp"),
   },
   {
     title: "Keratin or Nano Plastia",
@@ -32,21 +32,21 @@ const pricesData = [
     discount: "20% OFF",
     description:
       "Smooth, nourish, and revive your hair with premium treatments for long-lasting shine and strength.",
-    image: require("./../Images/Keratin or Nano Plastia.webp"),
+    image: require("./../Assets/Keratin or Nano Plastia.webp"),
   },
   {
     title: "Advance Haircut + Hair Spa + Clean-Up + Pedicure",
-    alt: "Clear and transparent pricing for salon services at Amrutha Salon in Hyderabad",
+    alt: "Clear and transparent pricing for salon services at Obsession Salon in Hyderabad",
     price: "₹2599",
     time: "2 hrs",
     discount: "12% OFF",
     description:
       "Experience a total grooming session from head to toe, leaving you relaxed, styled, and glowing.",
-    image: require("./../Images/Advance Haircut + Hair Spa + Clean-Up + Pedicure.webp"),
+    image: require("./../Assets/Advance Haircut + Hair Spa + Clean-Up + Pedicure.webp"),
   },
   {
     title: "Hair Spa + Skin Lightening Facial + Pedicure",
-    alt: "Exclusive salon and tattoo packages with pricing details at Amrutha Salon in Hyderabad",
+    alt: "Exclusive salon and tattoo packages with pricing details at Obsession Salon in Hyderabad",
     price: "₹3399",
     time: "2 hrs 30 min",
     discount: "18% OFF",
@@ -56,7 +56,7 @@ const pricesData = [
   },
   {
     title: "Male Haircut Only @200",
-    alt: "Professional male haircut services at Amrutha Salon Hyderabad Telangana",
+    alt: "Professional male haircut services at Obsession Salon Hyderabad Telangana",
     price: "₹200",
     time: "30 mins",
     discount: "No Discount",
@@ -72,7 +72,7 @@ const PriceList = () => {
       {/* Open Graph Tags */}
       <Helmet>
         <title>
-          Affordable Salon & Tattoo Prices in Hyderabad | Amrutha Salon and
+          Affordable Salon & Tattoo Prices in Hyderabad | Obsession Salon and
           Tattoos
         </title>
         <meta
@@ -92,13 +92,13 @@ const PriceList = () => {
         data-aos="fade-right"
       >
         <img
-          src={require("./../Images/star.gif")}
+          src={require("./../Assets/star.gif")}
           alt="star"
           className="pricing-star"
         />
         <h3 className="text-center ms-2 me-2 mt-2">Our Special Price List</h3>
         <img
-          src={require("./../Images/star.gif")}
+          src={require("./../Assets/star.gif")}
           alt="star"
           className="pricing-star"
         />

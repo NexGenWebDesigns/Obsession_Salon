@@ -28,14 +28,14 @@ function Navbar() {
     <>
       <div className="d-none navbar-tagline-details d-flex align-items-center justify-content-between">
         <p>Mon - Sat : 09:00AM to 06:00PM</p>
-        <p>info@amrutha.com</p>
+        <p>info@Obsession.com</p>
         <p>+918331889448</p>
       </div>
 
       <nav className="main-navbar navbar navbar-expand-lg" data-aos="fade-down">
         <div className="container">
           <Link className="navbar-brand fw-bold" to="/">
-            <img src={ObsessionLogo} alt="logo" className="amrutha-logo" />
+            <img src={ObsessionLogo} alt="logo" className="Obsession-logo" />
           </Link>
 
           <button

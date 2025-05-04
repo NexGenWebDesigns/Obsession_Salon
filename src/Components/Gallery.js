@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { galleryData } from "../Data/GalleryPageData";
 import { brandLogo, brandUrl, phoneNumber } from "../Data/AmrtuthaBrandData";
 import { Helmet } from "react-helmet";
+import HomeGallery from "./Sub Components/HomeGallery";
 
 function Gallery() {
   const [visibleItems, setVisibleItems] = useState(9);
@@ -15,8 +16,8 @@ function Gallery() {
       {/* Open Graph Tags */}
       <Helmet>
         <title>
-          Our Work | Salon & Tattoo Gallery in Hyderabad | Obsession
-          Unisex Salon & Nail Studio
+          Our Work | Salon & Tattoo Gallery in Hyderabad | Obsession Unisex
+          Salon & Nail Studio
         </title>
         <meta
           property="og:title"
@@ -40,7 +41,9 @@ function Gallery() {
         <p>Captured with our amazing clients and artists!</p>
       </div>
 
-      <div className="main-container main-masonry-gallery d-flex justify-content-around flex-wrap overflow-hidden">
+      <HomeGallery images={galleryData.slice(0, visibleItems)} />
+
+      {/* <div className="main-container main-masonry-gallery d-flex justify-content-around flex-wrap overflow-hidden">
         {galleryData.slice(0, visibleItems).map((item, index) => (
           <div
             key={index}
@@ -54,7 +57,7 @@ function Gallery() {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
 
       {visibleItems < galleryData.length && (
         <div className="text-center mt-4 mb-4">

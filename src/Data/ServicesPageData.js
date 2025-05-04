@@ -15,7 +15,7 @@ export const services = [
     title: "Advance Haircut + Head Massage + Hair Wash + De-Tan",
     alt: "Professional tattoo designs by Amrutha Salon and Tattoos in Hyderabad",
     description: "Complete hair care and grooming combo for just ₹1299.",
-    image: require("./../Images/Advance Haircut + Head Massage + Hair Wash + De-Tan.webp"),
+    image: require("./../Assets/Advance Haircut + Head Massage + Hair Wash + De-Tan.webp"),
     finalPrice: "₹1299",
   },
   {
@@ -24,7 +24,7 @@ export const services = [
     title: "Keratin or Nano Plastia",
     alt: "Facial treatments and skincare services at Amrutha Salon Telangana",
     description: "Smooth, silky, frizz-free hair treatments starting at ₹3999.",
-    image: require("./../Images/Keratin or Nano Plastia.webp"),
+    image: require("./../Assets/Keratin or Nano Plastia.webp"),
     finalPrice: "₹3999",
   },
   {
@@ -34,7 +34,7 @@ export const services = [
     alt: "Bridal makeup and hairstyling services at Amrutha Salon Hyderabad",
     description:
       "A full grooming session for just ₹2599. Shine from head to toe.",
-    image: require("./../Images/Advance Haircut + Hair Spa + Clean-Up + Pedicure.webp"),
+    image: require("./../Assets/Advance Haircut + Hair Spa + Clean-Up + Pedicure.webp"),
     finalPrice: "₹2599",
   },
   {
@@ -63,7 +63,7 @@ export const services = [
     alt: "Laser hair removal treatment offered at Amrutha Salon Telangana",
     description:
       "Luxurious spa treatments to refresh your body, mind, and soul.",
-    image: require("./../Images/Spa and Relaxation.webp"),
+    image: require("./../Assets/Spa and Relaxation.webp"),
   },
   {
     icon: "fa-magic",
@@ -72,7 +72,7 @@ export const services = [
     alt: "Body art and tattoo services at Amrutha Salon and Tattoos Hyderabad",
     description:
       "Professional makeup services for weddings, parties, and special events.",
-    image: require("./../Images/Makeup & Beauty.webp"),
+    image: require("./../Assets/Makeup & Beauty.webp"),
   },
   {
     icon: "fa-tint",
@@ -81,7 +81,7 @@ export const services = [
     alt: "Pedicure and foot care services at Amrutha Salon Vanasthalipuram",
     description:
       "Creative, clean, and unique tattoo designs inked by certified artists.",
-    image: require("./../Images/Tattoo Designing.webp"),
+    image: require("./../Assets/Tattoo Designing.webp"),
   },
   {
     icon: "fa-paint-brush",
@@ -99,6 +99,6 @@ export const services = [
     alt: "Permanent eyebrow enhancement services at Amrutha Salon Telangana",
     description:
       "Enhance your brows with natural-looking, semi-permanent microblading and shading.",
-    image: require("./../Images/Permanent Eyebrows.webp"),
+    image: require("./../Assets/Permanent Eyebrows.webp"),
   },
 ];

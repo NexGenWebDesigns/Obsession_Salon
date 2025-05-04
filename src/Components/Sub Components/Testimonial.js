@@ -84,7 +84,7 @@ function TestimonialsSlider() {
                 <div className="p-4">
                   <Link to={item.reviewlink}>
                     <img
-                      src={require("./../../Images/user.webp")}
+                      src={require("./../../Assets/user.webp")}
                       alt={item.name}
                       className="rounded-circle mb-3"
                       width="80"

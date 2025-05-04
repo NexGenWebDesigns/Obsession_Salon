@@ -25,7 +25,7 @@ const Contact = () => {
         />
         <meta
           property="og:description"
-          content="Contact Amrutha Salon and Tattoos — your trusted salon and tattoo studio in Hyderabad, Hyderabad. Book your appointment today for professional haircuts, makeup, facials, hair coloring, nail art, and tattoo services. Our friendly team is ready to assist you with personalized beauty and grooming solutions in Telangana. Call us, visit our salon, or book online to experience Hyderabad’s top-rated beauty parlour and tattoo studio. We’re always here to help you feel beautiful, bold, and confident!"
+          content="Contact Obsession Salon and Tattoos — your trusted salon and tattoo studio in Hyderabad, Hyderabad. Book your appointment today for professional haircuts, makeup, facials, hair coloring, nail art, and tattoo services. Our friendly team is ready to assist you with personalized beauty and grooming solutions in Telangana. Call us, visit our salon, or book online to experience Hyderabad’s top-rated beauty parlour and tattoo studio. We’re always here to help you feel beautiful, bold, and confident!"
         />
         <meta property="og:image" content={`${brandLogo}`} />
         <meta property="og:url" content={`${brandUrl}/contact`} />
@@ -108,7 +108,7 @@ const Contact = () => {
           <div className="" data-aos="fade-left">
             {/* Embedded Map */}
             <iframe
-              title="Amrutha Salon Map"
+              title="Obesession Salon Map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.996541720312!2d78.5533492!3d17.315716000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba33f9dd8623f%3A0xf8d1f2a24de7b632!2sObsession%20Unisex%20Salon%20%26%20Nail%20Studio!5e0!3m2!1sen!2sin!4v1745316725578!5m2!1sen!2sin"
               width="100%"
               height="350"

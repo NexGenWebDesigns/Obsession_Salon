@@ -9,7 +9,7 @@ function Error404() {
     >
       <div>
         <img
-          src={require("./../../Images/404-error.gif")}
+          src={require("./../../Assets/404-error.gif")}
           alt="404 Illustration"
           style={{ maxWidth: "300px" }}
         />

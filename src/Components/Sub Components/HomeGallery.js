@@ -1,95 +1,87 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 
-function HomeGallery({ filteredImages }) {
-  const [popupImg, setPopupImg] = useState(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(false);
+function SalonGallery({ images }) {
+  const [popupIndex, setPopupIndex] = useState(null);
 
-  const openPopup = (img, index) => {
-    setPopupImg(img);
-    setCurrentIndex(index);
-  };
+  const openPopup = (index) => setPopupIndex(index);
+  const closePopup = () => setPopupIndex(null);
 
-  const closePopup = () => {
-    setPopupImg(null);
-    setIsPlaying(false);
+  const showNext = () => {
+    setPopupIndex((prev) => (prev + 1) % images.length);
   };
 
   const showPrev = () => {
-    const newIndex =
-      (currentIndex - 1 + filteredImages.length) % filteredImages.length;
-    setPopupImg(filteredImages[newIndex].image);
-    setCurrentIndex(newIndex);
+    setPopupIndex((prev) => (prev - 1 + images.length) % images.length);
   };
-
-  const showNext = () => {
-    const newIndex = (currentIndex + 1) % filteredImages.length;
-    setPopupImg(filteredImages[newIndex].image);
-    setCurrentIndex(newIndex);
-  };
-
-  useEffect(() => {
-    document.body.style.overflow = popupImg ? "hidden" : "auto";
-    if (isPlaying) {
-      const interval = setInterval(showNext, 2000);
-      return () => clearInterval(interval);
-    }
-    // eslint-disable-next-line
-  }, [popupImg, isPlaying, currentIndex]);
 
   return (
     <section className="py-5" id="gallery">
       <div className="container">
-        <h3 className="fw-bold text-center mb-4" data-aos="zoom-in">
-          Our Work Gallery
+        <h3 className="fw-bold text-center" data-aos="fade-up">
+          Our Salon Gallery
         </h3>
-
-        <div className="d-flex justify-content-around flex-wrap gallery-container">
-          {filteredImages.map((item, index) => (
-            <div className="gallery-container-sub" key={index}>
+        <p className="text-center mb-3" data-aos="fade-up">
+          Explore our salon gallery featuring elegant hair styles, vibrant nail
+          art, and stunning transformations. Each image reflects our
+          professional touch, creativity, and dedication to delivering beauty
+          and confidence.
+        </p>
+        <div className="d-flex justify-content-around flex-wrap">
+          {images.map((img, index) => (
+            <div className="home-gallery-single-container" key={index}>
               <div
-                className="gallery-img-wrapper rounded"
-                onClick={() => openPopup(item.image, index)}
-                style={{
-                  backgroundImage: `url(${item.image})`,
-                }}
+                className=""
+                onClick={() => openPopup(index)}
+                style={{ cursor: "pointer" }}
               >
-                <div className="caption-overlay d-flex align-items-center justify-content-center">
-                  <h5 className="text-white text-center">{item.title}</h5>
-                </div>
+                <img
+                  src={img.image}
+                  alt={img.title}
+                  className="img-thumbnail"
+                  loading="lazy"
+                />
+                <div className="mt-3">{img.title}</div>
               </div>
             </div>
           ))}
         </div>
-
-        <div className="text-center pt-5" data-aos="fade">
-          <Link to="/gallery" className="btn btn-warning">
-            View More <i className="fa-solid fa-angle-right"></i>
-          </Link>
-        </div>
       </div>
 
-      {/* Popup Overlay */}
-      {popupImg && (
-        <div className="custom-popup">
-          <span className="close-btn" onClick={closePopup}>
-            &times;
-          </span>
-          <img src={popupImg} alt="View" className="popup-img" />
-          <button className="popup-nav left" onClick={showPrev}>
-            &#10094;
-          </button>
-          <button className="popup-nav right" onClick={showNext}>
-            &#10095;
-          </button>
-          <button className="play-btn" onClick={() => setIsPlaying(!isPlaying)}>
-            {isPlaying ? "❚❚ Pause" : "▶ Play"}
-          </button>
+      {/* Popup */}
+      {popupIndex !== null && (
+        <div
+          className="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-flex align-items-center justify-content-center z-1050"
+          style={{ zIndex: 1050 }}
+        >
+          <div
+            className="position-relative bg-black rounded p-3"
+            style={{ maxWidth: "90%", maxHeight: "90%" }}
+          >
+            <button
+              className="btn btn-sm btn-light position-absolute top-0 end-0 m-2"
+              onClick={closePopup}
+            >
+              &times;
+            </button>
+            <img
+              src={images[popupIndex].image}
+              alt="popup"
+              className="img-fluid rounded"
+              style={{ maxHeight: "80vh", objectFit: "contain" }}
+            />
+            <div className="d-flex justify-content-between mt-3">
+              <button className="btn btn-outline-light" onClick={showPrev}>
+                &#8592; Prev
+              </button>
+              <button className="btn btn-outline-light" onClick={showNext}>
+                Next &#8594;
+              </button>
+            </div>
+          </div>
         </div>
       )}
     </section>
   );
 }
 
-export default HomeGallery;
+export default SalonGallery;

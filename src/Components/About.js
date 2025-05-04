@@ -37,7 +37,7 @@ const About = () => {
         />
         <meta
           property="og:description"
-          content="Discover the story of Amrutha Salon and Tattoos — Hyderabad’s most trusted beauty salon and tattoo studio. Serving Hyderabad and Telangana, we focus on personalized care, expert services, and artistic expression. Our salon offers professional haircuts, makeup services, facials, nail art, and stylish tattoos that speak your personality. With a passionate team of certified beauty professionals and tattoo artists, we are committed to delivering top-notch services to every client. Learn more about our journey, our values, and what makes us one of the most recommended salons in Hyderabad."
+          content="Discover the story of Obsession Salon and Tattoos — Hyderabad’s most trusted beauty salon and tattoo studio. Serving Hyderabad and Telangana, we focus on personalized care, expert services, and artistic expression. Our salon offers professional haircuts, makeup services, facials, nail art, and stylish tattoos that speak your personality. With a passionate team of certified beauty professionals and tattoo artists, we are committed to delivering top-notch services to every client. Learn more about our journey, our values, and what makes us one of the most recommended salons in Hyderabad."
         />
         <meta property="og:image" content={`${brandLogo}`} />
         <meta property="og:url" content={`${brandUrl}/about`} />
@@ -63,7 +63,7 @@ const About = () => {
             <img
               src={require("./../Assets/20230926_200613_28_11zon.webp")}
               className="img-fluid rounded-4 shadow"
-              alt="amrutha salon near hyderabad"
+              alt="Obsession salon near hyderabad"
               loading="lazy"
             />
           </div>
@@ -102,7 +102,7 @@ const About = () => {
               src={require("./../Assets/014A1053_27_11zon.webp")}
               className="img-fluid rounded shadow"
               loading="lazy"
-              alt="amrutha salon near valasthipuram"
+              alt="Obsession salon near valasthipuram"
             />
           </div>
           <div className="col-md-6" data-aos="fade-left">
@@ -125,7 +125,7 @@ const About = () => {
           <div className="col-md-6 mb-4 text-center" data-aos="fade-left">
             <img
               src={require("./../Assets/014A1053_27_11zon.webp")}
-              alt="Professional hair styling services at Amrutha Salon Hyderabad Hyderabad"
+              alt="Professional hair styling services at Obsession Salon Hyderabad Hyderabad"
               loading="lazy"
               className="img-fluid rounded shadow"
             />

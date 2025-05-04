@@ -91,7 +91,7 @@ h6 {
 }
 
 /* Navbar Style */
-.amrutha-logo {
+.Obsession-logo {
   width: 10rem;
 }
 .navbar-tagline-details {
@@ -219,7 +219,7 @@ h6 {
 }
 .welcome-section {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("./Images/Home-welcome-background.webp") center/cover no-repeat;
+    url("./Assets/Home-welcome-background.webp") center/cover no-repeat;
   background-attachment: fixed;
   border-radius: 10px;
   margin: 2rem 3rem;
@@ -309,157 +309,17 @@ h6 {
   object-fit: cover;
 }
 
-.gallery-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px;
-  gap: 20px;
-  background-color: rgba(0, 0, 0, 0.089);
+.home-gallery-single-container{
+  height: 22rem;
+  width: 20rem;
 }
-
-/* Each image container */
-.gallery-container-sub {
-  flex: 0 0 calc(33.333% - 20px);
-  box-sizing: border-box;
-}
-
-/* Image styling */
-.gallery-img-wrapper {
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  padding-top: 75%; /* maintains aspect ratio */
-  position: relative;
-  overflow: hidden;
-  border-radius: 15px;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-/* Hover zoom effect */
-.gallery-img-wrapper:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-/* Caption overlay */
-.caption-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  border-radius: 15px;
-}
-
-/* Show caption on hover */
-.gallery-img-wrapper:hover .caption-overlay {
-  opacity: 1;
-}
-
-/* Caption text */
-.caption-overlay h5 {
-  font-size: 1.2rem;
-  margin: 0;
-}
-.custom-popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.9);
-  z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.popup-img {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 10px;
-  animation: zoomIn 0.4s ease;
-}
-.close-btn {
-  position: absolute;
-  top: 20px;
-  right: 35px;
-  color: #fff;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-  z-index: 10000;
-}
-.popup-nav {
-  position: absolute;
-  top: 50%;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.4);
-  border: none;
-  padding: 10px 16px;
-  font-size: 30px;
-  cursor: pointer;
-  z-index: 10000;
-  border-radius: 50%;
-  transform: translateY(-50%);
-}
-.popup-nav.left {
-  left: 30px;
-}
-.popup-nav.right {
-  right: 30px;
-}
-.popup-nav:hover {
-  background: rgba(0, 0, 0, 0.7);
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes zoomIn {
-  from {
-    transform: scale(0.6);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-.play-btn {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #fff;
-  background: rgba(0, 0, 0, 0.7);
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 30px;
-  cursor: pointer;
-  z-index: 10000;
-  transition: 0.3s ease;
-}
-
-.play-btn:hover {
-  background: rgba(0, 0, 0, 0.9);
+.home-gallery-single-container img{
+  height: 18rem;
 }
 .home-cta-section {
   margin: 4rem;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("./Images/Home-cta-background.webp") center/cover no-repeat;
+    url("./Assets/Home-cta-background.webp") center/cover no-repeat;
   background-attachment: fixed;
 }
 #why-choose-us img {
@@ -521,7 +381,7 @@ h6 {
 .services-discount-banner {
   margin: 4rem;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("./Images/services-discount-banner-background.webp") center/cover
+    url("./Assets/services-discount-banner-background.webp") center/cover
       no-repeat;
   background-attachment: fixed;
   border-radius: 10px;
@@ -529,7 +389,7 @@ h6 {
 .services-cta-section {
   margin: 4rem;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("./Images/services-discount-banner-background.webp") center/cover
+    url("./Assets/services-discount-banner-background.webp") center/cover
       no-repeat;
   background-attachment: fixed;
   border-radius: 10px;
@@ -600,7 +460,7 @@ h6 {
 .prices-parallax-cta {
   margin-top: 3rem;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("./Images/prices-parallax-cta-nackground.webp") center/cover no-repeat
+    url("./Assets/prices-parallax-cta-nackground.webp") center/cover no-repeat
       fixed;
   padding: 60px 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -737,7 +597,7 @@ iframe {
 /* About Styles */
 .about-hero {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("./Images/About-hero-background.webp") center/cover no-repeat fixed;
+    url("./Assets/About-hero-background.webp") center/cover no-repeat fixed;
   width: 95%;
   margin-top: 2rem;
   padding: 140px 70px;
@@ -768,7 +628,7 @@ iframe {
 
 .about-counters {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("./Images/services-discount-banner-background.webp") center/cover
+    url("./Assets/services-discount-banner-background.webp") center/cover
       no-repeat;
   margin: 2rem 3rem;
   border-radius: 10px;
@@ -790,73 +650,9 @@ iframe {
   padding: 140px 70px;
 }
 
-.curved-underline {
-  display: block;
-  width: 100px;
-  height: 5px;
-  background: linear-gradient(to right, #ff3c75, #ffa34f);
-  border-radius: 50px;
-  margin: 10px auto 0;
-}
-.main-masonry-gallery {
-  margin-top: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px;
-  gap: 20px;
-}
-
-/* Square box with background image */
-.main-gallery-box {
-  flex: 0 0 calc(33.333% - 20px);
-  box-sizing: border-box;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  overflow: hidden;
-  border-radius: 15px;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  aspect-ratio: 1 / 1; /* 👈 ensures square ratio */
-}
-
-/* Hover zoom effect */
-.main-gallery-box:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-/* Caption overlay */
-.main-caption {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px;
-  transition: opacity 0.3s ease;
-}
-
-/* Show caption on hover */
-.main-gallery-box:hover .main-caption {
-  opacity: 1;
-}
-
-/* Caption text */
-.main-caption h5 {
-  font-size: 1.2rem;
-  margin: 0;
-  color: #fff;
-}
-
 .gallery-parallax-cta {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("./Images/Gallery-Parallax-cta-background.webp") center center/cover
+    url("./Assets/Gallery-Parallax-cta-background.webp") center center/cover
       no-repeat fixed;
   background-attachment: fixed;
   background-size: cover;
@@ -918,7 +714,7 @@ iframe {
 /* Footer Styles */
 footer {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("./Images/Footer-background.webp") center/cover no-repeat;
+    url("./Assets/Footer-background.webp") center/cover no-repeat;
 
   background-attachment: fixed;
 }
@@ -933,7 +729,7 @@ footer li {
   .navbar-contact-number {
     display: none;
   }
-  .amrutha-logo {
+  .Obsession-logo {
     width: 6rem;
   }
   .home-special-offer-tag {
@@ -963,9 +759,6 @@ footer li {
   }
   #why-choose-us img {
     margin: 2rem 0rem;
-  }
-  .gallery-img-wrapper {
-    width: 100%;
   }
   .testimonial-container {
     width: 95%;
@@ -1044,19 +837,6 @@ footer li {
   }
 }
 
-/* Responsive adjustments */
-@media (max-width: 992px) {
-  .gallery-container-sub {
-    flex: 0 0 calc(50% - 20px);
-  }
-}
-
-@media (max-width: 576px) {
-  .gallery-container-sub {
-    flex: 0 0 100%;
-  }
-}
-
 /* Fade-in animation class (optional) */
 .main-fade-in {
   opacity: 0;
@@ -1066,18 +846,5 @@ footer li {
 @keyframes fadeIn {
   to {
     opacity: 1;
-  }
-}
-
-/* Responsive adjustments */
-@media (max-width: 992px) {
-  .main-gallery-box {
-    flex: 0 0 calc(50% - 20px);
-  }
-}
-
-@media (max-width: 576px) {
-  .main-gallery-box {
-    flex: 0 0 100%;
   }
 }

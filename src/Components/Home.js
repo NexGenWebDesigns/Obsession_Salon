@@ -11,7 +11,6 @@ import {
 import HomeGallery from "./Sub Components/HomeGallery";
 import { galleryData } from "../Data/GalleryPageData";
 import { Helmet } from "react-helmet";
-// import AnniversaryPoster from "./Sub Components/AnniversaryPoster";
 
 const faqs = [
   {
@@ -127,8 +126,7 @@ function Home() {
       {/* Open Graph Tags */}
       <Helmet>
         <title>
-          Best Salon & Tattoo Studio in Hyderabad | Amrutha Salon &
-          Tattoos
+          Best Salon & Tattoo Studio in Hyderabad | Obsession Salon & Tattoos
         </title>
         <meta
           property="og:title"
@@ -136,7 +134,7 @@ function Home() {
         />
         <meta
           property="og:description"
-          content="Amrutha Salon and Tattoos is the #1 destination for beauty, grooming, and tattoos in Hyderabad, Hyderabad, Telangana. We specialize in haircuts, bridal makeup, facials, hair coloring, nail art, body tattoos, and more. Our skilled team offers trendy styles and artistic tattoo work to enhance your look and confidence. Visit us for modern salon services and unique tattoo designs. Book your appointment now at the best salon and tattoo studio in Hyderabad. Discover why we are rated among the top beauty parlours in Hyderabad. Feel beautiful, bold, and confident at Amrutha!"
+          content="Obsession Salon and Tattoos is the #1 destination for beauty, grooming, and tattoos in Hyderabad, Hyderabad, Telangana. We specialize in haircuts, bridal makeup, facials, hair coloring, nail art, body tattoos, and more. Our skilled team offers trendy styles and artistic tattoo work to enhance your look and confidence. Visit us for modern salon services and unique tattoo designs. Book your appointment now at the best salon and tattoo studio in Hyderabad. Discover why we are rated among the top beauty parlours in Hyderabad. Feel beautiful, bold, and confident at Obsession!"
         />
         <meta property="og:image" content={`${brandLogo}`} />
         <meta property="og:url" content={`${brandUrl}`} />
@@ -147,14 +145,16 @@ function Home() {
         data-aos="fade-right"
       >
         <img
-          src={require("./../Images/fire.gif")}
+          src={require("./../Assets/fire.gif")}
           alt="fire"
+          loading="lazy"
           className="home-fire-gif"
         />
         <h3 className="mt-3">Best Salon Special Offers</h3>
         <img
-          src={require("./../Images/fire.gif")}
+          src={require("./../Assets/fire.gif")}
           alt="fire"
+          loading="lazy"
           className="home-fire-gif"
         />
       </div>
@@ -223,16 +223,17 @@ function Home() {
           <div className="col-md-6 p-4" data-aos="fade-left">
             <h4 className="fw-bold mb-3">Salon Services in Hyderabad</h4>
             <p>
-              Obsession Unisex Salon & Nail Studio in Hyderabad, Hyderabad offers
-              premium unisex salon services tailored to your style. Our skilled
-              team specializes in trendy haircuts, vibrant hair coloring, smooth
-              blow-drys, threading, facials, bridal makeup, and custom tattoos.
-              We use high-quality, skin-safe products and the latest techniques
-              to deliver flawless, long-lasting results. Whether it’s a casual
-              makeover or a special event, we create looks that match your
-              personality and boost your confidence. Discover the best salon and
-              tattoo studio experience in Hyderabad and Telangana with Amrutha
-              Salon & Tattoos — where beauty meets creativity.
+              Obsession Unisex Salon & Nail Studio in Hyderabad, Hyderabad
+              offers premium unisex salon services tailored to your style. Our
+              skilled team specializes in trendy haircuts, vibrant hair
+              coloring, smooth blow-drys, threading, facials, bridal makeup, and
+              custom tattoos. We use high-quality, skin-safe products and the
+              latest techniques to deliver flawless, long-lasting results.
+              Whether it’s a casual makeover or a special event, we create looks
+              that match your personality and boost your confidence. Discover
+              the best salon and tattoo studio experience in Hyderabad and
+              Telangana with Obsession Salon & Tattoos — where beauty meets
+              creativity.
             </p>
             <Link to="/services" className="btn btn-danger">
               View Services
@@ -254,15 +255,15 @@ function Home() {
             <h4 className="fw-bold mb-3">Custom Tattoos in Hyderabad</h4>
             <p>
               Discover the best tattoo studio in Hyderabad, Hyderabad, at
-              Obsession Unisex Salon & Nail Studio. Our expert tattoo artists specialize in
-              custom, creative, and meaningful tattoo designs for men and women.
-              Whether it’s your first tattoo or an addition to your collection,
-              we deliver clean, detailed, and long-lasting artwork using
-              premium, skin-safe inks. We prioritize hygiene and safety,
-              ensuring a comfortable and memorable tattoo experience. Book your
-              appointment today for stylish tattoos in Telangana's top-rated
-              salon and studio. Let your skin tell a beautiful story with our
-              professional tattoo services in Hyderabad!
+              Obsession Unisex Salon & Nail Studio. Our expert tattoo artists
+              specialize in custom, creative, and meaningful tattoo designs for
+              men and women. Whether it’s your first tattoo or an addition to
+              your collection, we deliver clean, detailed, and long-lasting
+              artwork using premium, skin-safe inks. We prioritize hygiene and
+              safety, ensuring a comfortable and memorable tattoo experience.
+              Book your appointment today for stylish tattoos in Telangana's
+              top-rated salon and studio. Let your skin tell a beautiful story
+              with our professional tattoo services in Hyderabad!
             </p>
             <Link to="/services" className="btn btn-dark">
               Explore Tattoos
@@ -283,16 +284,16 @@ function Home() {
           <div className="col-md-6 p-4" data-aos="fade-left">
             <h4 className="fw-bold mb-3">Facial Services in Hyderabad</h4>
             <p>
-              At Obsession Unisex Salon & Nail Studio, your beauty, confidence, and
-              well-being matter to us. That’s why we use and recommend only
+              At Obsession Unisex Salon & Nail Studio, your beauty, confidence,
+              and well-being matter to us. That’s why we use and recommend only
               premium, skin-safe, and hair-friendly products for all our
               services. From professional skincare treatments to gentle haircare
               solutions, every product is carefully chosen for its quality,
               safety, and proven results. Our exclusive range keeps your skin
               glowing, hair healthy, and leaves you feeling refreshed,
               nourished, and radiant. Experience the best of salon-grade beauty
-              products in Hyderabad, Hyderabad, designed to give your skin
-              and hair the love they truly deserve.
+              products in Hyderabad, Hyderabad, designed to give your skin and
+              hair the love they truly deserve.
             </p>
             <Link to="/services" className="btn btn-danger">
               See Our Brands
@@ -310,6 +311,7 @@ function Home() {
         <div className="row align-items-center">
           <div className="col-lg-6 text-center" data-aos="fade-right">
             <img
+              loading="lazy"
               src={require("./../Assets/unisex-salon.webp")}
               alt="tattoo studio Hyderabad"
               className="img-fluid rounded shadow"
@@ -318,8 +320,8 @@ function Home() {
           <div className="col-lg-6" data-aos="fade-left">
             <h4 className="fw-bold">Professional Unisex Salon Services</h4>
             <p className="">
-              Discover premium unisex salon services in Hyderabad,
-              Hyderabad at Obsession Unisex Salon & Nail Studio. We offer expert haircuts,
+              Discover premium unisex salon services in Hyderabad, Hyderabad at
+              Obsession Unisex Salon & Nail Studio. We offer expert haircuts,
               hair coloring, facials, bridal makeup, grooming, and custom
               tattoos for men and women. Experience trendy, affordable, and
               hygienic salon services tailored to your style. Book your
@@ -333,21 +335,22 @@ function Home() {
         <div className="row align-items-center flex-lg-row-reverse mb-5">
           <div className="col-lg-6 text-center" data-aos="fade-left">
             <img
-              src={require("./../Images/tattoo-studio-hyderabad.webp")}
+              src={require("./../Assets/tattoo-studio-hyderabad.webp")}
               alt="custom tattoo studio Hyderabad"
               className="img-fluid rounded shadow"
+              loading="lazy"
             />
           </div>
           <div className="col-lg-6" data-aos="fade-right">
             <h4 className="fw-bold">Custom Creative Tattoo Studio</h4>
             <p className="">
-              Discover Obsession Unisex Salon & Nail Studio, Hyderabad’s top-rated
-              custom creative tattoo studio in Hyderabad. We design unique,
-              skin-safe tattoos tailored to your personality, using premium
-              certified inks. Experience professional tattoo artistry with
-              hygienic, personalized designs for every style — minimalistic,
-              bold, or traditional. Book your custom tattoo appointment in
-              Telangana today!
+              Discover Obsession Unisex Salon & Nail Studio, Hyderabad’s
+              top-rated custom creative tattoo studio in Hyderabad. We design
+              unique, skin-safe tattoos tailored to your personality, using
+              premium certified inks. Experience professional tattoo artistry
+              with hygienic, personalized designs for every style —
+              minimalistic, bold, or traditional. Book your custom tattoo
+              appointment in Telangana today!
             </p>
           </div>
         </div>
@@ -356,9 +359,10 @@ function Home() {
         <div className="row align-items-center mb-5">
           <div className="col-lg-6 text-center" data-aos="fade-right">
             <img
-              src={require("./../Images/affordable-salon-telangana.webp")}
+              src={require("./../Assets/affordable-salon-telangana.webp")}
               alt="tattoo Telangana"
               className="img-fluid rounded shadow"
+              loading="lazy"
             />
           </div>
           <div className="col-lg-6" data-aos="fade-left">
@@ -367,9 +371,9 @@ function Home() {
               Experience top-quality salon and tattoo services at affordable
               prices. Our value-packed packages offer exceptional results in
               hairstyling, makeup, and custom tattoos, all tailored to your
-              unique needs. Located in Hyderabad, Hyderabad, we ensure
-              every client receives premium care, comfort, and unbeatable
-              pricing. Book your appointment today and indulge in the best salon
+              unique needs. Located in Hyderabad, Hyderabad, we ensure every
+              client receives premium care, comfort, and unbeatable pricing.
+              Book your appointment today and indulge in the best salon
               experience!
             </p>
           </div>
@@ -379,26 +383,31 @@ function Home() {
         <div className="row align-items-center flex-lg-row-reverse">
           <div className="col-lg-6 text-center" data-aos="fade-left">
             <img
-              src={require("./../Images/safe-hygienic-salon-tattoo.webp")}
+              src={require("./../Assets/safe-hygienic-salon-tattoo.webp")}
               alt="safe and hygienic salon"
               className="img-fluid rounded shadow"
+              loading="lazy"
             />
           </div>
           <div className="col-lg-6" data-aos="fade-right">
             <h4 className="fw-bold">Safe, Hygienic & Trusted by Customers</h4>
             <p className="d">
-              Experience top-notch hygiene and safety with Amrutha Salon &
-              Tattoos, trusted by customers in Hyderabad, Hyderabad. Our
-              salon ensures the highest standards of cleanliness and
-              professionalism for every service, from haircuts to tattoos,
-              making us a reliable choice for all your beauty and grooming
-              needs.
+              Experience top-notch hygiene and safety with Obsession Salon &
+              Tattoos, trusted by customers in Hyderabad, Hyderabad. Our salon
+              ensures the highest standards of cleanliness and professionalism
+              for every service, from haircuts to tattoos, making us a reliable
+              choice for all your beauty and grooming needs.
             </p>
           </div>
         </div>
       </div>
 
-      <HomeGallery filteredImages={galleryData.slice(0, 9)} />
+      <HomeGallery images={galleryData.slice(0, 9)} />
+      <div className="text-center">
+        <Link to={"/gallery"} className="btn btn-primary">
+          See more <i className="fa-solid fa-arrow-up-right-from-square"></i>
+        </Link>
+      </div>
       <ClientTestimonials />
 
       <div className="container py-5" id="faqs">

@@ -5,18 +5,17 @@ import { services } from "../Data/ServicesPageData";
 import { Helmet } from "react-helmet";
 
 const Services = () => {
-
   return (
     <div>
       {/* Open Graph Tags */}
       <Helmet>
         <title>
-          Salon & Tattoo Services in Hyderabad, Hyderabad | Amrutha Salon
-          & Tattoos
+          Salon & Tattoo Services in Hyderabad, Hyderabad | Obsession Salon &
+          Tattoos
         </title>
         <meta
           property="og:title"
-          content="Salon & Tattoo Services in Hyderabad, Hyderabad | Amrutha Salon & Tattoos"
+          content="Salon & Tattoo Services in Hyderabad, Hyderabad | Obsession Salon & Tattoos"
         />
         <meta
           property="og:description"
@@ -121,9 +120,7 @@ const Services = () => {
         <h3 className="fw-bold text-white">
           Let's Transform Your Look Together!
         </h3>
-        <p>
-          Our team is ready to give you the makeover you deserve.
-        </p>
+        <p>Our team is ready to give you the makeover you deserve.</p>
         <Link to="/contact" className="btn btn-outline-light px-4 py-2 mt-3">
           Contact Us Now
         </Link>
